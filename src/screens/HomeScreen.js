@@ -5,6 +5,7 @@ import {
   View,
   Text,
   TouchableOpacity,
+  Image,
 } from 'react-native';
 
 //custom components
@@ -17,6 +18,15 @@ export default function HomeScreen() {
       <ScrollView>
         <Summary />
         <Actions />
+        <View style={styles.container}>
+          <TouchableOpacity style={styles.transactionsButton}>
+            <Image
+              style={styles.btnImage}
+              source={require('../assets/transactions.png')}
+            />
+            <Text style={styles.btnText}>Transactions</Text>
+          </TouchableOpacity>
+        </View>
       </ScrollView>
     </SafeAreaView>
   );
@@ -26,5 +36,27 @@ const styles = {
   sav: {
     flex: 1,
     backgroundColor: '#364156',
+  },
+  container: {
+    padding: 15,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  transactionsButton: {
+    paddingVertical: 7,
+    paddingHorizontal: 25,
+    backgroundColor: '#EF476F',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  btnText: {
+    color: '#fff',
+    fontWeight: 'bold',
+  },
+  btnImage: {
+    width: 35,
+    height: 35,
+    resizeMode: 'cover',
+    tintColor: '#fff',
   },
 };
