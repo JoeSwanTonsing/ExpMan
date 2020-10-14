@@ -1,6 +1,6 @@
 ## Welcome to GitHub Pages
 
-<img src="assets/GitHub Header copy.png" width="200">
+<img src="assets/GitHubHeader.jpg" width="200">
 
 You can use the [editor on GitHub](https://github.com/JoeSwanTonsing/ExpMan/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
