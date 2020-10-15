@@ -12,21 +12,12 @@ import {
 import Summary from '../components/summary/Summary';
 import Actions from '../components/actions/Actions';
 
-export default function HomeScreen() {
+export default function HomeScreen({navigation}) {
   return (
     <SafeAreaView style={styles.sav}>
       <ScrollView>
-        <Summary />
-        <Actions />
-        <View style={styles.container}>
-          <TouchableOpacity style={styles.transactionsButton}>
-            <Image
-              style={styles.btnImage}
-              source={require('../assets/transactions.png')}
-            />
-            <Text style={styles.btnText}>Transactions</Text>
-          </TouchableOpacity>
-        </View>
+        <Summary navigation={navigation} />
+        <Actions navigation={navigation} />
       </ScrollView>
     </SafeAreaView>
   );
@@ -48,6 +39,7 @@ const styles = {
     backgroundColor: '#EF476F',
     justifyContent: 'center',
     alignItems: 'center',
+    borderRadius: 5,
   },
   btnText: {
     color: '#fff',
