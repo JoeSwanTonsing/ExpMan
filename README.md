@@ -8,3 +8,8 @@ Expense Manager (ExpMan) - Expense tracker and managing app for iOS and Android,
 1. React Native Vector Icons - https://github.com/oblador/react-native-vector-icons
 2. React Navigation - https://reactnavigation.org
 
+
+### More Details and Screenshots here:
+
+https://joeswantonsing.github.io/ExpMan/
+
