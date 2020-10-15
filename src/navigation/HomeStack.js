@@ -3,6 +3,7 @@ import {createStackNavigator} from '@react-navigation/stack';
 import Icon from 'react-native-vector-icons/Ionicons';
 
 import HomeScreen from '../screens/HomeScreen';
+import AddIncomeScreen from '../screens/AddIncomeScreen';
 
 const HomeStack = createStackNavigator();
 
@@ -33,6 +34,13 @@ const HomeStackScreen = ({navigation}) => (
             }}
           />
         ),
+      }}
+    />
+    <HomeStack.Screen
+      name="AddIncomeScreen"
+      component={AddIncomeScreen}
+      options={{
+        title: 'Add Income',
       }}
     />
   </HomeStack.Navigator>
