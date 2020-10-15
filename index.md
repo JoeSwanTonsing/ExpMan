@@ -6,7 +6,8 @@ ExpMan is an Opensource app/project to track your daily expenses both in iOS and
 
 ### Screenshot:
 
-<img src="assets/Screenshot.png">
+<img src="assets/Screenshot1_700.png">
+<img src="assets/Screenshot2_700.png">
 
 
 #### Features:
@@ -15,4 +16,4 @@ ExpMan is an Opensource app/project to track your daily expenses both in iOS and
 3. Add Income
 4. Add Expense
 5. View Transaction History
-6. Get Report
+6. Get Monthly Report
