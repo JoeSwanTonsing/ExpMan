@@ -9,6 +9,8 @@ import {
 } from 'react-native';
 import {DrawerContentScrollView, DrawerItem} from '@react-navigation/drawer';
 import Icon from 'react-native-vector-icons/Ionicons';
+import Share from 'react-native-share';
+import files from '../assets/fileBase64';
 
 import {displayName as appName} from '../../app.json';
 
@@ -17,6 +19,22 @@ export default function DrawerContent(props) {
     Linking.openURL('https://joeswantonsing.github.io/ExpMan/').catch((err) =>
       console.error("Couldn't load page", err),
     );
+  };
+
+  const myCustomShare = async () => {
+    const shareOptions = {
+      message:
+        "Hi! Track and Manage your expenses with this amazing free app called ExpMan! It\'s free and opensourced. Install it now.",
+      url: files.appIcon,
+    };
+
+    try {
+      const shareResponse = await Share.open(shareOptions);
+      //get os platform from which user is using to share the app:
+      console.log(JSON.stringify(shareResponse));
+    } catch (e) {
+      console.log('Error => ', e);
+    }
   };
 
   return (
@@ -52,7 +70,7 @@ export default function DrawerContent(props) {
           </TouchableOpacity>
           <TouchableOpacity
             style={styles.menuItem}
-            onPress={() => props.navigation.navigate('Dashboard')}>
+            onPress={() => myCustomShare()}>
             <Icon
               name="share-social-outline"
               size={25}
