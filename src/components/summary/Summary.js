@@ -33,7 +33,7 @@ export default function Summary() {
         </View>
         {/* Total Expense */}
         <View>
-          <Text style={styles.textWhite}>Total Income</Text>
+          <Text style={styles.textWhite}>Total Expense</Text>
           <Text style={[styles.textWhite, styles.textBold, styles.f18]}>
             {'\u20B9'}
             {'\u00A0'}

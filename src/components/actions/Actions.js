@@ -71,7 +71,7 @@ const styles = {
     flex: 1,
     backgroundColor: '#364156',
     paddingVertical: 10,
-    paddingHorizontal: 45,
+    paddingHorizontal: 15,
     borderRadius: 5,
     alignItems: 'center',
   },
