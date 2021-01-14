@@ -1,4 +1,4 @@
-[<img src="assets/GitHubHeader.jpg">] (https://joeswantonsing.github.io/PaiteDictionary/)
+<img src="assets/GitHubHeader.jpg">
 
 # ExpMan - Expense Manager & Tracker
 
